@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Game Developer</title>
+  <meta name="description" content="Game developer portfolio showcasing projects, skills, and experience." />
+
+  <!-- Basic styling: intentionally simple & hackable -->
+  <style>
+    :root {
+      --bg: #0f1220;
+      --bg-alt: #171a2e;
+      --text: #eaeaf0;
+      --muted: #a0a3c4;
+      --accent: #7c7cff;
+      --card: #1f2340;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 3rem 1.5rem;
+      background: linear-gradient(135deg, var(--bg), var(--bg-alt));
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    main {
+      padding: 2.5rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.25rem;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      background: rgba(124,124,255,0.15);
+      color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+    }
+
+    footer {
+      padding: 2rem 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Resume-style list */
+    .timeline {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 0.25rem 0;
+    }
+
+    .timeline-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO / INTRO -->
+  <header>
+    <h1>Your Name</h1>
+    <p>
+      Game Developer specializing in <strong>engine/tools/programming/design</strong>. 
+      I build games, systems, and weird experiments.
+    </p>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>Project Title</h3>
+          <p>
+            Short description of the game or system. What makes it interesting? 
+            What did <em>you</em> do on it?
+          </p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Gameplay</span>
+          </div>
+          <p>
+            <a href="#">Trailer</a> · <a href="#">GitHub</a> · <a href="#">Itch.io</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Another Project</h3>
+          <p>Another short pitch. Screenshots and gifs would go great here later.</p>
+          <div class="tags">
+            <span class="tag">Unreal</span>
+            <span class="tag">C++</span>
+            <span class="tag">Tools</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>C++, C#, Python, Lua, JavaScript</p>
+        </div>
+        <div class="card">
+          <h3>Engines & Tech</h3>
+          <p>Unity, Unreal, Godot, Custom Engines</p>
+        </div>
+        <div class="card">
+          <h3>Game Design</h3>
+          <p>Gameplay systems, balance, prototyping, iteration</p>
+        </div>
+        <div class="card">
+          <h3>Other</h3>
+          <p>Shaders, tools, performance, pipelines</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME / EXPERIENCE -->
+    <section id="resume">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Job Title – Company</h3>
+          <span>2022 – Present</span>
+          <p>
+            What you worked on, your responsibilities, and the impact you had.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Education / Previous Role</h3>
+          <span>2018 – 2022</span>
+          <p>Degree, school, or notable experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        A more personal section. Your interests, what kinds of games you love, 
+        what motivates you, and what you want to work on next.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:you@email.com">you@email.com</a><br />
+        GitHub: <a href="#">github.com/yourname</a><br />
+        LinkedIn: <a href="#">linkedin.com/in/yourname</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Your Name · Game Developer
+  </footer>
+
+  <script>
+    // Tiny JS so the footer year stays current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
